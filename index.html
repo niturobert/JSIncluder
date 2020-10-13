@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="theme-color" content="#000000">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>JSIncluder</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="md-top-app-bar-container">
+			<nav class="uk-navbar-container uk-container-expand" uk-navbar="mode: click">
+				<div class="uk-navbar-left">
+					<a class="uk-navbar-item" onclick="window.history.back()"><i class="material-icons md-icon md-color-white uk-hidden@m">arrow_back</i></a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="uk-container uk-container-expand">
+		<h2 class="md-color-white">Project Name</h2>
+		<div class="content-before"></div>
+		<div data-uk-grid>
+			<div class="uk-width-1-1">
+				<div class="uk-card">
+					<div class="uk-position-relative" uk-slideshow="animation: scale; max-height: 600; min-height: 200">
+						<ul class="uk-slideshow-items">
+							<li>
+								<img src="http://getwallpapers.com/wallpaper/full/3/e/f/894120-hong-kong-wallpapers-1920x1080-mobile.jpg" alt="" uk-cover>
+							</li>
+							<li>
+								<img src="https://btrdotpm.firebaseapp.com/img-s/077.webp" alt="" uk-cover>
+							</li>
+							<li>
+								<img src="http://getwallpapers.com/wallpaper/full/3/9/6/894275-hong-kong-wallpapers-1920x1080-samsung-galaxy.jpg" alt="" uk-cover>
+							</li>
+						</ul>
+
+						<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+						<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+						<div class="uk-position-bottom-center uk-position-small uk-visible@l">
+							<ul class="uk-thumbnav">
+								<li uk-slideshow-item="0"><a href="#"><img src="http://getwallpapers.com/wallpaper/full/3/e/f/894120-hong-kong-wallpapers-1920x1080-mobile.jpg" width="100" height="32" alt=""></a></li>
+								<li uk-slideshow-item="1"><a href="#"><img src="https://btrdotpm.firebaseapp.com/img-s/077.webp" width="100" height="32" alt=""></a></li>
+								<li uk-slideshow-item="2"><a href="#"><img src="http://getwallpapers.com/wallpaper/full/3/9/6/894275-hong-kong-wallpapers-1920x1080-samsung-galaxy.jpg" width="100" height="32" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+					<div style="margin: 25px">
+						<div class="uk-flex-center" uk-grid>
+							<div>
+								<a class="md-btn md-btn-primary ripple-surface md-btn-icon" href="#" uk-toggle="target: #modal_default"><i class="material-icons">content_copy</i>Copy</a>
+							</div>
+							<div>
+								<a class="md-btn md-btn-secondary ripple-surface md-btn-icon" href="#"><i class="material-icons">code</i>Source Code</a>
+							</div>
+						</div>
+
+						<h3>Description</h3>
+						<p>JSIncluder is a library to include a webpage inside another without using any backend functionality.</h3>
+						<div class="uk-overflow-auto">
+							<table class="uk-table uk-table-dense uk-table-hover">
+								<thead>
+									<tr>
+										<th>Version</th>
+										<th>1.0.0</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Last Update</td>
+										<td>2020/10/13</td>
+									</tr>
+									<tr>
+										<td>Platforms</td>
+										<td>Web</td>
+									</tr>
+									<tr>
+										<td>Download Size</td>
+										<td>317 bytes</td>
+									</tr>
+									<tr>
+										<td>Programming Language</td>
+										<td>Javascript</td>
+									</tr>
+									<tr>
+										<td>License</td>
+										<td>MIT</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<br /><br />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modal_default" uk-modal>
+	    <div class="uk-modal-dialog uk-margin-auto-vertical">
+	        <button class="uk-modal-close-default" type="button" uk-close></button>
+	        <div class="uk-modal-header">
+	            <h2 class="uk-modal-title">Add via a CDN</h2>
+	        </div>
+	        <div class="uk-modal-body">
+	            	<pre><code class="language-javascript">&lt;script src="https://niturobert.github.io/JSIncluder/JSIncluder.js"&gt;&lt;/script&gt;
+	            	</code></pre>
+	        </div>
+	    </div>
+	</div>
+
+
+	<br /><br /><br /><br /><br /><br />
+
+	<div class="uk-section-small">
+		<div class="uk-container uk-container-expand uk-text-center uk-position-relative">
+			<span>Copyright © 2020 - Nitu Robert-Georgian</span>
+		</div>
+	</div>
+</body>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/md-uikit@1.4.2/dist/css/md-uikit.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/md-uikit@1.4.2/dist/js/md-uikit.js" ></script>
+</html>
